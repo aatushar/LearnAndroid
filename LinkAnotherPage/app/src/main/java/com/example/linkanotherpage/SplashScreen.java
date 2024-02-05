@@ -17,6 +17,7 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         Animation animation= AnimationUtils.loadAnimation(this, R.anim.zoom_in);
         ImageView splashLogo=  findViewById(R.id.splashLogo);
         splashLogo.setAnimation(animation);
@@ -30,6 +31,7 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 Intent intent= new Intent(getApplicationContext(), Home.class);
+                startActivity(intent);
                 finish();
             }
 
