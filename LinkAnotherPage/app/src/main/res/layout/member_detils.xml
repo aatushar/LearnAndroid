@@ -34,7 +34,7 @@
 
             <ImageView
                 android:id="@+id/spouseImage"
-                android:layout_width="183dp"
+                android:layout_width="133dp"
                 android:layout_height="188dp"
                 android:layout_weight="1"
                 android:src="@drawable/oldpasport" />
